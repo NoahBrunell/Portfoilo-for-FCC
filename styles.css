@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#welcome-section {
+    height: 100vh;
+    width: 100%;
+    background-color: #303841;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.4;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 65px;
+    background-color: rgb(222, 189, 56);
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+#projects_link {
+    margin: 0 2rem 0 auto;
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+#headline {
+    color: #f0f0f0;
+    display: block;
+    font-size: 4rem;
+}
+
+#under_headline {
+    color: rgb(222, 189, 56);
+}
+
+#projects {
+    background-color: rgb(29, 55, 70);
+    height: fit-content;
+    width: 100%;
+}
+
+#tiles_container {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects_headline {
+    color: #f0f0f0;
+    display: block;
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 124px 0 24px 0;
+    text-decoration: underline rgb(222, 189, 56);
+}
+
+.project-tile {
+    width: 20vw;
+    height: 20vw;
+    background-color: #404851;
+    margin: 2.5vw;
+    box-shadow: 7px 6px 28px 0px rgba(0, 0, 0, 0.74);
+    -webkit-box-shadow: 7px 6px 28px 0px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: 7px 6px 28px 0px rgba(0, 0, 0, 0.74);
+    border-radius: 15px;
+    display: flex;
+}
+
+.project-tile:hover {
+    border: 2px solid rgb(222, 189, 56);
+}
+
+.project-tile:active {
+    transform: scale(98%);
+}
+
+.project_link {
+    background-color: #303841;
+    color: #f0f0f0;
+    width: 100%;
+    text-align: center;
+    align-self: flex-end;
+    padding: 16px 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: 3px solid rgb(222, 189, 56);
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
